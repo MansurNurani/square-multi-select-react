@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import "./file.css"
 export default class Todo extends Component {
     state = { selectedIds: [] }
-    arrayRemove=(arr, value) => arr.filter(a=>a !== value);
+    arrayRemove = (arr, value) => arr.filter(a => a !== value);
     handleClick = (e) => {
         let id = parseInt(e.target.dataset.id);
         if (this.state.selectedIds.includes(id)) {
@@ -18,11 +18,13 @@ export default class Todo extends Component {
         let style1 = { backgroundColor: "green" };
         console.log("in render: " + this.state.selectedIds);
         return (
-            <div id="flexContainer1">
-                salam<br />
-                {[0, 1, 2, 3, 4, 5, 6, 7, 8].map(a => (
-                    <div data-id={a} className="MyClass" style={this.state.selectedIds.includes(a) ? style1 : null} onClick={this.handleClick}></div>
-                ))}
+            <div>
+                salam1<br />
+                <div id="flexContainer1">
+                    {[0, 1, 2, 3, 4, 5, 6, 7, 8].map(a => (
+                        <div data-id={a} className="MyClass" style={this.state.selectedIds.includes(a) ? style1 : null} onClick={this.handleClick}></div>
+                    ))}
+                </div>
             </div>
         )
     }
