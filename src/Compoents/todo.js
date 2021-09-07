@@ -19,7 +19,7 @@ export default class Todo extends Component {
         console.log("in render: " + this.state.selectedIds);
         return (
             <div>
-                salameewrwrewre<br />
+                ss<br />
                 <div id="flexContainer1">
                     {[0, 1, 2, 3, 4, 5, 6, 7, 8].map(a => (
                         <div data-id={a} className="MyClass" style={this.state.selectedIds.includes(a) ? style1 : null} onClick={this.handleClick}></div>
