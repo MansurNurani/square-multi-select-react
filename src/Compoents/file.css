@@ -24,5 +24,5 @@
   border: 1px solid darkgray;
   display: flex;
   flex-wrap: wrap;
-  max-width: 300px;
+  width: 300px;
 }
