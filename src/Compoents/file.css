@@ -1,7 +1,7 @@
 .MyClass {
   box-sizing: border-box;
-  width: 196px;
-  height: 196px;
+  width: 96px;
+  height: 96px;
   margin: 2px;
   background-color: lightblue;
   /* border:2px green solid; */
@@ -24,5 +24,5 @@
   border: 1px solid darkgray;
   display: flex;
   flex-wrap: wrap;
-  max-width: 600px;
+  max-width: 300px;
 }
